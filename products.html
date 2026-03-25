@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Teeyou Hair</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header - Same as index -->
+    <header class="header">
+        <div class="top-bar">
+            <div class="container">
+                <div class="top-bar-content">
+                    <div>📍 Delivering across Nigeria</div>
+                    <div>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#" style="margin-left:15px"><i class="fab fa-facebook"></i></a>
+                        <a href="#" style="margin-left:15px"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-main">
+            <div class="container">
+                <div class="header-content">
+                    <a href="index.html" class="logo"><div class="logo-icon">T</div><span>Teeyou Hair</span></a>
+                    <div class="search-box"><form><input type="text" placeholder="Search for wigs..."><button type="submit"><i class="fas fa-search"></i></button></form></div>
+                    <div class="header-actions">
+                        <a href="#"><i class="far fa-user"></i> Account</a>
+                        <a href="#"><i class="far fa-heart"></i> Wishlist</a>
+                        <a href="#"><i class="fas fa-shopping-cart"></i> Cart <span class="cart-count">0</span></a>
+                    </div>
+                    <div class="mobile-toggle"><span></span><span></span><span></span></div>
+                </div>
+            </div>
+        </div>
+        <nav class="nav-main">
+            <div class="container">
+                <div class="nav-content">
+                    <ul class="main-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Shop <i class="fas fa-chevron-down"></i></a>
+                            <ul class="dropdown">
+                                <li><a href="products.html">All Products</a></li>
+                                <li><a href="products.html?category=bob">Bob Wigs</a></li>
+                                <li><a href="products.html?category=long">Long Wigs</a></li>
+                                <li><a href="products.html?category=curly">Curly Wigs</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="products.html?category=new">New Arrivals</a></li>
+                        <li><a href="products.html?category=sale">Sale</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- Mobile Menu -->
+    <div class="mobile-menu"><div class="mobile-menu-close">&times;</div>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+    <div class="mobile-overlay"></div>
+    
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <span>Products</span>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-layout">
+                <!-- Sidebar -->
+                <aside class="sidebar">
+                    <div class="sidebar-section">
+                        <h4>Categories</h4>
+                        <ul class="category-list">
+                            <li><a href="products.html">All Products <span>(50)</span></a></li>
+                            <li><a href="products.html?category=bob">Bob Wigs <span>(12)</span></a></li>
+                            <li><a href="products.html?category=long">Long Wigs <span>(15)</span></a></li>
+                            <li><a href="products.html?category=curly">Curly Wigs <span>(10)</span></a></li>
+                            <li><a href="products.html?category=wave">Wave Wigs <span>(8)</span></a></li>
+                            <li><a href="products.html?category=frontal">Lace Frontals <span>(5)</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="sidebar-section">
+                        <h4>Price Range</h4>
+                        <div class="price-range">
+                            <input type="range" min="10000" max="100000" value="50000">
+                            <p>Price: ₦10,000 - ₦100,000+</p>
+                        </div>
+                    </div>
+                    <div class="sidebar-section">
+                        <h4>Filter</h4>
+                        <div class="filter-buttons">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="new">New</button>
+                            <button class="filter-btn" data-filter="sale">Sale</button>
+                        </div>
+                    </div>
+                </aside>
+                
+                <!-- Products Grid -->
+                <div class="products-main">
+                    <div class="products-grid">
+                        <!-- Products same as homepage -->
+                        <div class="product-card" data-category="bob">
+                            <div class="product-image">
+                                <span class="product-badge">Bestseller</span>
+                                <div class="product-wishlist">🤍</div>
+                                <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=400" alt="Elegant Bob">
+                                <div class="product-actions">
+                                    <a href="#" class="product-action-btn"><i class="fas fa-eye"></i> Quick View</a>
+                                    <a href="#" class="product-action-btn"><i class="fas fa-shopping-cart"></i> Add</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Classic</div>
+                                <h3 class="product-name">Elegant Bob Wig</h3>
+                                <div class="product-price">
+                                    <span class="current-price">₦25,000</span>
+                                    <span class="old-price">₦35,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card" data-category="long">
+                            <div class="product-image">
+                                <span class="product-badge">Premium</span>
+                                <div class="product-wishlist">🤍</div>
+                                <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?w=400" alt="Silky Straight">
+                                <div class="product-actions">
+                                    <a href="#" class="product-action-btn"><i class="fas fa-eye"></i> Quick View</a>
+                                    <a href="#" class="product-action-btn"><i class="fas fa-shopping-cart"></i> Add</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Long & Silky</div>
+                                <h3 class="product-name">Silky Straight Wig</h3>
+                                <div class="product-price">
+                                    <span class="current-price">₦45,000</span>
+                                    <span class="old-price">₦60,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card" data-category="curly">
+                            <div class="product-image">
+                                <div class="product-wishlist">🤍</div>
+                                <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400" alt="Full Curly">
+                                <div class="product-actions">
+                                    <a href="#" class="product-action-btn"><i class="fas fa-eye"></i> Quick View</a>
+                                    <a href="#" class="product-action-btn"><i class="fas fa-shopping-cart"></i> Add</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Curly</div>
+                                <h3 class="product-name">Full Curly Wig</h3>
+                                <div class="product-price">
+                                    <span class="current-price">₦35,000</span>
+                                    <span class="old-price">₦45,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card" data-category="wave">
+                            <div class="product-image">
+                                <span class="product-badge">New</span>
+                                <div class="product-wishlist">🤍</div>
+                                <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?w=400" alt="Ocean Wave">
+                                <div class="product-actions">
+                                    <a href="#" class="product-action-btn"><i class="fas fa-eye"></i> Quick View</a>
+                                    <a href="#" class="product-action-btn"><i class="fas fa-shopping-cart"></i> Add</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Wavy</div>
+                                <h3 class="product-name">Ocean Wave Wig</h3>
+                                <div class="product-price">
+                                    <span class="current-price">₦40,000</span>
+                                    <span class="old-price">₦55,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card" data-category="frontal">
+                            <div class="product-image">
+                                <div class="product-wishlist">🤍</div>
+                                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=400" alt="Lace Front">
+                                <div class="product-actions">
+                                    <a href="#" class="product-action-btn"><i class="fas fa-eye"></i> Quick View</a>
+                                    <a href="#" class="product-action-btn"><i class="fas fa-shopping-cart"></i> Add</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Lace Front</div>
+                                <h3 class="product-name">Lace Front Wig</h3>
+                                <div class="product-price">
+                                    <span class="current-price">₦55,000</span>
+                                    <span class="old-price">₦75,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="product-card" data-category="closure">
+                            <div class="product-image">
+                                <span class="product-badge">Sale</span>
+                                <div class="product-wishlist">🤍</div>
+                                <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400" alt="Closure">
+                                <div class="product-actions">
+                                    <a href="#" class="product-action-btn"><i class="fas fa-eye"></i> Quick View</a>
+                                    <a href="#" class="product-action-btn"><i class="fas fa-shopping-cart"></i> Add</a>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <div class="product-category">Closure</div>
+                                <h3 class="product-name">4x4 Closure Wig</h3>
+                                <div class="product-price">
+                                    <span class="current-price">₦30,000</span>
+                                    <span class="old-price">₦42,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo"><div class="logo-icon">T</div><span>Teeyou Hair</span></a>
+                    <p>Your trusted source for premium wigs in Nigeria. Beauty & Grace.</p>
+                </div>
+                <div><h4>Quick Links</h4><ul class="footer-links"><li><a href="index.html">Home</a></li><li><a href="products.html">Shop</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+                <div><h4>Contact</h4><ul class="footer-links"><li>+234 XXX XXX XXXX</li><li>info@teeyouhair.com</li><li>Nigeria</li></ul></div>
+            </div>
+            <div class="footer-bottom"><p>&copy; 2026 Teeyou Hair. All rights reserved.</p></div>
+        </div>
+    </footer>
+    
+    <a href="https://wa.me/2340000000000" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    <script src="js/script.js"></script>
+</body>
+</html>
