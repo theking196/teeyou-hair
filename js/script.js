@@ -8,12 +8,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const mobileOverlay = document.querySelector('.mobile-overlay');
     const mobileClose = document.querySelector('.mobile-menu-close');
     
-    if (mobileToggle) {
-        mobileToggle.addEventListener('click', () => {
-            mobileMenu.classList.add('active');
+    function openMobileMenu() {
+        if (mobileMenu) mobileMenu.classList.add('active');
+        if (mobileOverlay) {
             mobileOverlay.style.display = 'block';
-            document.body.style.overflow = 'hidden';
-        });
+            mobileOverlay.style.opacity = '1';
+            mobileOverlay.style.pointerEvents = 'all';
+        }
+        document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMobileMenu() {
+        if (mobileMenu) mobileMenu.classList.remove('active');
+        if (mobileOverlay) {
+            mobileOverlay.style.display = 'none';
+            mobileOverlay.style.opacity = '0';
+            mobileOverlay.style.pointerEvents = 'none';
+        }
+        document.body.style.overflow = 'auto';
+    }
+    
+    if (mobileToggle) {
+        mobileToggle.addEventListener('click', openMobileMenu);
     }
     
     if (mobileClose) {
@@ -22,12 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (mobileOverlay) {
         mobileOverlay.addEventListener('click', closeMobileMenu);
-    }
-    
-    function closeMobileMenu() {
-        mobileMenu.classList.remove('active');
-        mobileOverlay.style.display = 'none';
-        document.body.style.overflow = 'auto';
     }
     
     // Header Scroll Effect
