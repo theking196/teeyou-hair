@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teeyou Hair - Beauty & Grace</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+        
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .logo { font-size: 2.5rem; font-weight: bold; }
+        .tagline { font-size: 1.2rem; opacity: 0.9; }
+        
+        /* Hero */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=1200') center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+        }
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.5rem; }
+        
+        /* Products */
+        .products { padding: 50px 20px; max-width: 1200px; margin: 0 auto; }
+        .products h2 { text-align: center; margin-bottom: 40px; color: #ff6b35; font-size: 2rem; }
+        .product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        .product-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        .product-img { width: 100%; height: 250px; background: #f5f5f5; display: flex; align-items: center; justify-content: center; color: #888; }
+        .product-info { padding: 20px; }
+        .product-name { font-size: 1.3rem; font-weight: bold; margin-bottom: 10px; }
+        .product-price { color: #ff6b35; font-size: 1.2rem; font-weight: bold; }
+        
+        /* About */
+        .about { background: #f9f9f9; padding: 50px 20px; text-align: center; }
+        .about h2 { color: #ff6b35; margin-bottom: 20px; }
+        .verse { font-style: italic; color: #666; margin-top: 20px; }
+        
+        /* Contact */
+        .contact { padding: 50px 20px; max-width: 800px; margin: 0 auto; text-align: center; }
+        .contact h2 { color: #ff6b35; margin-bottom: 20px; }
+        .contact-info { display: flex; justify-content: center; gap: 40px; flex-wrap: wrap; }
+        .contact-item { text-align: center; }
+        .contact-item span { display: block; font-weight: bold; color: #ff6b35; }
+        
+        /* CTA */
+        .cta {
+            background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        .cta h2 { margin-bottom: 20px; }
+        .cta button {
+            background: white;
+            color: #ff6b35;
+            border: none;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .cta button:hover { transform: scale(1.05); }
+        
+        /* Footer */
+        footer { background: #333; color: white; text-align: center; padding: 20px; }
+        footer p { opacity: 0.7; }
+        
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .hero p { font-size: 1.1rem; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">Teeyou Hair</div>
+        <div class="tagline">Beauty & Grace</div>
+    </header>
+    
+    <section class="hero">
+        <div>
+            <h1>Premium Wigs for Every Style</h1>
+            <p>Discover Your Perfect Look</p>
+        </div>
+    </section>
+    
+    <section class="products">
+        <h2>Our Collection</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-img">📸 Image Coming Soon</div>
+                <div class="product-info">
+                    <div class="product-name">Classic Bob Wig</div>
+                    <div class="product-price">₦15,000 - ₦25,000</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">📸 Image Coming Soon</div>
+                <div class="product-info">
+                    <div class="product-name">Long Silky Waves</div>
+                    <div class="product-price">₦25,000 - ₦40,000</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">📸 Image Coming Soon</div>
+                <div class="product-info">
+                    <div class="product-name">Curly Full Wig</div>
+                    <div class="product-price">₦20,000 - ₦35,000</div>
+                </div>
+            </div>
+            <div class="product-card">
+                <div class="product-img">📸 Image Coming Soon</div>
+                <div class="product-info">
+                    <div class="product-name">Straight Premium</div>
+                    <div class="product-price">₦30,000 - ₦50,000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about">
+        <h2>About Teeyou Hair</h2>
+        <p>We specialize in premium quality wigs crafted with love and excellence.</p>
+        <p class="verse">"For God so loved the world that He gave His only begotten Son..." - John 3:16</p>
+    </section>
+    
+    <section class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <div class="contact-item">
+                <span>WhatsApp</span>
+                +234 XXX XXX XXXX
+            </div>
+            <div class="contact-item">
+                <span>Instagram</span>
+                @teeyouhair
+            </div>
+            <div class="contact-item">
+                <span>Website</span>
+                www.teeyouhair.com
+            </div>
+        </div>
+    </section>
+    
+    <section class="cta">
+        <h2>Ready to Look Amazing?</h2>
+        <p>Order now and elevate your style!</p>
+        <br>
+        <button onclick="alert('WhatsApp us to order!')">Place Order</button>
+    </section>
+    
+    <footer>
+        <p>&copy; 2026 Teeyou Hair. Beauty & Grace.</p>
+    </footer>
+</body>
+</html>
